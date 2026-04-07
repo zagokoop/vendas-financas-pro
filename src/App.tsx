@@ -77,7 +77,7 @@ const Navbar = () => {
           <span className="text-xl font-bold tracking-tighter text-white">FINANÇAS<span className="text-emerald-500">PRO</span></span>
         </div>
         <a 
-          href="#oferta" 
+          href="https://pay.kiwify.com.br/i1zR1aj" 
           className="hidden md:block bg-emerald-500 hover:bg-emerald-400 text-black font-bold py-2 px-6 rounded-full transition-all transform hover:scale-105"
         >
           Começar Agora
@@ -112,7 +112,7 @@ const Hero = () => (
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a 
-            href="https://pay.kiwify.com.br/FlyHtvX" 
+            href="https://pay.kiwify.com.br/i1zR1aj" 
             className="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-400 text-black text-lg font-bold py-4 px-10 rounded-xl transition-all transform hover:scale-105 flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(16,185,129,0.3)]"
           >
             QUERO ORGANIZAR MINHA VIDA AGORA
@@ -427,7 +427,7 @@ const Pricing = () => (
         
         <div className="mt-12">
           <a 
-            href="https://pay.kiwify.com.br/FlyHtvX" 
+            href="https://pay.kiwify.com.br/i1zR1aj" 
             className="block w-full bg-emerald-500 hover:bg-emerald-400 text-black text-xl font-black py-6 rounded-2xl transition-all transform hover:scale-[1.02] text-center shadow-[0_10px_30px_rgba(16,185,129,0.3)] uppercase tracking-tight"
           >
             QUERO ORGANIZAR MINHA VIDA FINANCEIRA AGORA
@@ -541,7 +541,7 @@ export default function App() {
               <span className="text-emerald-500">Ou começa hoje a organizar sua vida.</span>
             </h2>
             <a 
-              href="https://pay.kiwify.com.br/FlyHtvX" 
+              href="https://pay.kiwify.com.br/i1zR1aj" 
               className="inline-flex items-center gap-3 bg-emerald-500 hover:bg-emerald-400 text-black text-xl font-black py-6 px-12 rounded-2xl transition-all transform hover:scale-105 shadow-[0_10px_30px_rgba(16,185,129,0.3)] uppercase"
             >
               Quero Garantir Meu Acesso
