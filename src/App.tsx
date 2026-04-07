@@ -383,6 +383,62 @@ const Benefits = () => (
   </section>
 );
 
+const Testimonials = () => (
+  <section className="py-24 px-6 bg-zinc-950">
+    <div className="max-w-7xl mx-auto">
+      <div className="text-center mb-16">
+        <h2 className="text-sm font-bold text-emerald-500 uppercase tracking-widest mb-4">Depoimentos</h2>
+        <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">Quem usa, aprova e recomenda</h3>
+        <p className="text-gray-400">Veja o que nossos clientes estão falando sobre o Finanças Pro.</p>
+      </div>
+      
+      <div className="grid md:grid-cols-3 gap-8">
+        {[
+          {
+            name: "Ricardo Santos",
+            role: "Empresário",
+            text: "Finalmente entendi para onde meu dinheiro estava indo. Em apenas 2 meses usando o Finanças Pro, já consegui guardar mais do que no ano passado inteiro!",
+            avatar: "https://picsum.photos/seed/ricardo/100/100"
+          },
+          {
+            name: "Amanda Lima",
+            role: "Designer Freelancer",
+            text: "O dashboard é incrível e muito intuitivo. Eu sempre tive pavor de planilhas, mas o sistema é tão simples que hoje eu adoro organizar meus gastos.",
+            avatar: "https://picsum.photos/seed/amanda/100/100"
+          },
+          {
+            name: "Bruno Machado",
+            role: "Analista de Sistemas",
+            text: "Saí do vermelho em tempo recorde. O planejamento mensal e a visão clara das categorias mudaram completamente meu jogo financeiro.",
+            avatar: "https://picsum.photos/seed/bruno/100/100"
+          }
+        ].map((testimonial, i) => (
+          <div key={i} className="p-8 bg-zinc-900 border border-white/5 rounded-2xl relative">
+            <div className="flex gap-1 mb-4">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-4 h-4 fill-emerald-500 text-emerald-500" />
+              ))}
+            </div>
+            <p className="text-gray-300 mb-8 italic leading-relaxed">"{testimonial.text}"</p>
+            <div className="flex items-center gap-4">
+              <img 
+                src={testimonial.avatar} 
+                alt={testimonial.name} 
+                className="w-12 h-12 rounded-full border-2 border-emerald-500/20"
+                referrerPolicy="no-referrer"
+              />
+              <div>
+                <h4 className="text-white font-bold text-sm">{testimonial.name}</h4>
+                <p className="text-gray-500 text-xs">{testimonial.role}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
 const Pricing = () => (
   <section id="oferta" className="py-24 px-6 bg-emerald-950/20 relative overflow-hidden">
     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-emerald-500 to-transparent" />
@@ -530,6 +586,7 @@ export default function App() {
         <SolutionSection />
         <DashboardPreview />
         <Benefits />
+        <Testimonials />
         <Pricing />
         <FAQ />
         
